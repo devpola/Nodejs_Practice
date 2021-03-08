@@ -8,6 +8,7 @@ app.use(cookieParser());
 app.get('/', function(req, res, next){
     //cookie 생성
     res.cookie('mycookie', 'set cookie');
+    res.cookie('hello', 0);
     res.end("hello");
 })
 
